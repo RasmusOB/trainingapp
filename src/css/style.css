@@ -14,6 +14,7 @@ body {
 header {
     padding: 1em;
     background-color: #008eff;
+    font-size: 1.5rem;
 }
 header h1,
 h2 {
@@ -24,7 +25,7 @@ header h2 {
 }
 
 #exercise-form {
-    width: 50%;
+    width: 40%;
     margin: 2em auto;
     padding: 1em;
     text-align: center;
@@ -39,7 +40,7 @@ header h2 {
     margin-bottom: 0.5em;
 }
 #exercise-form label {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #fff;
     margin-bottom: 0.5em;
@@ -84,6 +85,7 @@ header h2 {
 }
 #workouts {
     text-align: center;
+    margin-top: 1em;
 }
 #workouts .group {
     display: grid;
@@ -92,6 +94,9 @@ header h2 {
 
 #workouts h1 {
     color: #fff;
+    width: fit-content;
+    margin: auto;
+    border-bottom: solid #fff 5px; 
 }
 
 #workouts h2 {
@@ -102,4 +107,89 @@ header h2 {
 p {
     display: inline;
     color: #fff;
+}
+
+.workout {
+  margin-top: 2em; 
+  background-color: #2f3136;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+#sort-by {
+  padding: 0.4em;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #2f3136; 
+  border: solid #fff 1px;
+}
+
+@media screen and (max-width: 600px) {
+  #exercise-form {
+    width: 80%;
+    border-radius: 0; 
+  }
+
+  #exercise-form legend {
+    font-size: 1.5rem;
+  }
+  #exercise-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5em;
+  }
+
+  #exercise-form input {
+    padding: 0.25em;
+    font-size: 0.75rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em; 
+  }
+
+  #exercise-form .form-group {
+    grid-template-columns: 1fr;
+  }
+
+  #exercises {
+    background-color: #008eff;
+    width: 40%;
+    border-radius: 0;
+    margin: auto;
+    padding: 1em;
+  }
+  #workouts .group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #workouts h1 {
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    border-bottom: solid #fff 5px; 
+    font-size: 1.3rem;
+  }
+
+  #workouts h2 {
+    margin-top: 1em; 
+    font-size: 1em;
+  }
+
+  .workout {
+    margin-top: 2em; 
+    background-color: #2f3136;
+    padding: 0.5em;
+    border-radius: 0;
+  }
+
+  #sort-by {
+    padding: 0.2em;
+    border-radius: 0;
+  }
+
+  #exercises {
+    width: 80%;
+  }
 }
