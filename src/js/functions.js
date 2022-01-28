@@ -33,3 +33,8 @@ function createWorkoutGroup(category, data) {
 
     return group;
 }
+
+function updateInput(input, data) {
+  input.value = ''
+  input.placeholder = data
+}
