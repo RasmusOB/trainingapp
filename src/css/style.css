@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #212120;
+}
+
+body {
+    background-color: #2f3136;
+}
+
+header {
+    padding: 1em;
+    background-color: #008eff;
+}
+header h1,
+h2 {
+    color: #fff;
+}
+header h2 {
+    font-size: 1rem;
+}
+
+#exercise-form {
+    width: 50%;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: center;
+    background-color: #008eff;
+    border-radius: 1em;
+}
+
+#exercise-form legend {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+#exercise-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+#exercise-form input {
+    display: inline;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-style: italic;
+}
+
+#exercise-form .form-group {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#add-btn {
+    background-color: #00ff73;
+    padding: 1em;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-weight: bolder;
+    border: none;
+}
+
+.hide {
+    display: none;
+}
+
+#exercises {
+    background-color: #008eff;
+    width: 40%;
+    border-radius: 1em;
+    margin: auto;
+    padding: 1em;
+}
+#workouts {
+    text-align: center;
+}
+#workouts .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#workouts h1 {
+    color: #fff;
+}
+
+#workouts h2 {
+    font-size: 1.25em;
+}
+
+#workouts h2,
+p {
+    display: inline;
+    color: #fff;
+}
