@@ -28,6 +28,8 @@ addBtn.addEventListener('click', (e) => {
     const rest = restInp.value;
     const date = dateInp.value;
 
+    if(exerciseName.length < 1 || reps.length < 1 || reps.length < 1 || weight.length < 1 || sets.length < 1 || rest.length < 1 || date.length < 1) return
+
     const newDiv = document.createElement('div');
     const newTitle = document.createElement('h1');
 
@@ -50,6 +52,8 @@ addBtn.addEventListener('click', (e) => {
     // Creates the Date group
     newDiv.appendChild(createWorkoutGroup('Date', date));
 
+    newDiv.classList.add('workout')
+
     workouts.appendChild(newDiv);
 
     console.log(newDiv);
@@ -59,4 +63,11 @@ addBtn.addEventListener('click', (e) => {
     }
 
     updateExercises();
+    
+    updateInput(exerciseNameInp, exerciseName)
+    updateInput(repsInp, reps)
+    updateInput(weightInp, weight)
+    updateInput(setsInp, sets)
+    updateInput(restInp, rest)
+    updateInput(dateInp, date)
 });
